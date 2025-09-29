@@ -1,0 +1,50 @@
+:root {
+  --pale-dogwood: rgb(202, 210, 235);
+  --bistre: #2C2418ff;
+  --mountbatten-pink: #8F7FA3ff;
+  --silver-lake-blue: #6991C2ff;
+  --powder-blue: rgb(6, 7, 7);
+}
+
+/* navigation */
+nav {
+  display: flex;
+  justify-content: space-between; /* pushes items to edges */
+  background-color: var(--pale-dogwood, #333);
+  padding: 30px;
+  position: sticky;   /* sticks to top when scrolling */
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-right,
+.navbar-left{
+  list-style: none;
+  
+  display: flex;
+  gap: 20px;
+
+  color: var(--silver-lake-blue);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 19px;
+  transition: color 0.2s ease;
+}
+
+nav div a {
+  color: var(--silver-lake-blue);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 19px;
+  transition: color 0.2s ease;
+}
+
+nav div a:hover {
+  color: var(--bistre);;
+}
+
+nav img {
+  border-radius: 50%;
+}
+
+
