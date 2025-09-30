@@ -4,4 +4,10 @@ footer{
     background: #333;
     color: white;
     padding: 20px;
+
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
 }

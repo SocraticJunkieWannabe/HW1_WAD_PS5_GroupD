@@ -1,6 +1,12 @@
 body {
+
+  display: flex;
+  flex-direction: column;
+
   margin: 0;
   padding: 0;
   height: 100%;  /* let body stretch full viewport height */
   overflow-x: hidden; /* hide horizontal scroll */
+
+  min-height: 100vh;
 }

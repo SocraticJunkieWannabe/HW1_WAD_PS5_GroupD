@@ -1,10 +1,18 @@
 body > section {
-    background-color: #e0e0e0;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    /* width: 100%; */
+    /* max-width: 400px; */
+
+    max-width: 300px;
     width: 100%;
-    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #009089;
+    text-align: center;
+
+    flex: 1;
 }
 
 /* Style the form elements */
@@ -25,7 +33,7 @@ body > section input,
 body > section textarea,
 body > section button {
     width: 100%;
-    padding: 10px;
+    /*padding: 10px; */
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
