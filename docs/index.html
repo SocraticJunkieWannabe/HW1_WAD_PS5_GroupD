@@ -1,17 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Tartu Forum</title>
-    <!-- Footer styles -->
-   <link rel="stylesheet" href="style_footer.css" />
+  <meta charset="UTF-8">
+  <title>Tartu Forum</title>
+  <link rel="stylesheet" href="styles/style_body.css" />
+  <!-- Navigation styles -->
+  <link rel="stylesheet" href="styles/style_navbar.css" />
+  <!-- Post styles -->
+  <link rel="stylesheet" href="styles/style_posts.css" />
+  <!-- Footer styles -->
+   <link rel="stylesheet" href="styles/style_footer.css" />
 </head>
-
 <body>
+
+    <template id="post-template">
+        <div class="post" style="width: 300px;"> <!-- default width-->
+            <div class="post-header">
+              <div class="post-header-right">
+                  <img class="post-author-pfp" src="imgs/blank_profile.webp" width="50" height="50"> 
+              </div>
+              <div class="post-header-left">
+                  <p class="post-date"></p>
+              </div>
+            </div>
+
+            <div class="post-content">
+              <img class="post-image" src=""> 
+              <p class="post-description"></p>
+            </div>
+
+            <div class="post-footer">
+                <img class="post-image" src="imgs/like.png" width="50" height="50"> 
+            </div>
+        </div>
+    </template>
+
+    <nav>
+      <div class="navbar-left">
+        <li><a href="index.html">Home</a></li>
+        <li> | </li>
+        <li><a href="addPost.html">Post</a></li>
+      </div>
+      <div class="navbar-right">
+         <a href = login.html> <img src="imgs/blank_profile.webp" alt="Blank Profile" width="50" height="50"> </a>
+      </div>
+    </nav>
+
+    <div class=posts-container id="posts-container"></div>
 
     <footer>
         <p>Authors: Loïc Delattre, Mattis Roellinger, Guillaume Le Chartier</p>
-    </footer>
+    </footer> 
+
+    <script src="src/posts_loader.js"> </script>
 
 </body>
 </html>
