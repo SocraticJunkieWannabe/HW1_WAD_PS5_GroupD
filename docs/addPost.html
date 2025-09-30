@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tartu Forum</title>
+  <link rel="stylesheet" href="styles/style_body.css" />
+  <!-- Navigation styles -->
+  <link rel="stylesheet" href="styles/style_navbar.css" />
+  <!-- Footer styles -->
+   <link rel="stylesheet" href="styles/style_footer.css" />
+   <!-- Adding post form styles -->
+   <link rel="stylesheet" href="styles/style_add_post_form.css" />
+</head>
+<body>
+    <nav>
+      <div class="navbar-left">
+        <li><a href="index.html">Home</a></li>
+        <li> | </li>
+        <li><a href="addPost.html">Post</a></li>
+      </div>
+      <div class="navbar-right">
+         <a href = login.html> <img src="imgs/blank_profile.webp" alt="Blank Profile" width="50" height="50"> </a>
+      </div>
+    </nav>
+
+    <section>
+        <h1>Add a Post</h1>
+        <form action="index.html" method="post" enctype="multipart/form-data">
+            <label for="postBody">Post Body:</label><br>
+            <textarea id="postBody" name="postBody" rows="5" cols="50" placeholder="Write your post here..."></textarea><br><br>
+            
+            <label for="postFile">Attach a file:</label><br>
+            <input type="file" id="postFile" name="postFile"><br><br>
+            
+            <button type="submit">Create Post</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Authors: Loïc Delattre, Mattis Roellinger, Guillaume Le Chartier</p>
+    </footer> 
+</body>
+</html>
