@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
- <meta charset="UTF-8">
- <link rel="stylesheet" href="style_footer.css" />
+ 
 </head>
-<body>
-    <h1>PLACEHOLDER FOR FINAL HEADER</h1>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style_footer.css" />
+    <link rel="stylesheet" href="styles/style_navbar.css" />
+    <link rel="stylesheet" href="styles/style_body.css" />
+    <link rel="stylesheet" href="styles/style_login.css" />
+    
 </head>
+<nav>
+    <div class="navbar-left">
+        <li><a href='index.html'>Home</a></li>
+        
+    </div>
 
+    <div class="navbar-right">
+         <a href = login.html> <img src="imgs/blank_profile.webp" alt="Blank Profile" width="50" height="50"> </a>
+    </div>
+</nav>
 
 <body>
-
-    <div id="login-container"> 
-    </div id="login-container">
-
-    <div id="register-container"></div>
-    <div id="register-container"></div>
-    <p>Don't have an account?</p> <button id="register-button">Register</button>
-
+    <div id="container"> 
+    </div>
 </body>
+
+
 
 <script>
 
@@ -41,6 +49,7 @@
             <div><input id="login-password" type="password" placeholder="Please enter a password" required></div>
         </div>
         <div><button id="login-button" onclick="location.href='index.html'" disabled>Login</button></div>
+        <p>Don't have an account?</p> <button id="register-button">Register</button>
            `;
     const emptyFormHTML = ``;
 
@@ -71,23 +80,34 @@
         }
     }
 
-    document.addEventListener('DOMContentLoaded', function renderLoginForm() {
-    document.getElementById('login-container').innerHTML = loginFormHTML;
-    document.getElementById('register-container').innerHTML = emptyFormHTML;
+    function renderLoginForm() {
+        document.getElementById('container').innerHTML = loginFormHTML;
+    }
+
+    function renderRegForm() {
+        document.getElementById('container').innerHTML = registrationFormHTML;
+    }
+
+    // --- Event Delegation ---
+    // We listen for clicks on the main container, which never changes.
+    document.addEventListener('click', function(event) {
+        // If the element that was clicked has the id 'register-button', render the registration form.
+        if (event.target && event.target.id === 'register-button') {
+            renderRegForm();
+        }
+
+        // If the element that was clicked has the id 'BackLogin', render the login form.
+        if (event.target && event.target.id === 'BackLogin') {
+            renderLoginForm();
+        }
     });
-    
-    document.getElementById("register-button").addEventListener('click', function renderRegForm() {
-        document.getElementById('login-container').innerHTML = emptyFormHTML;
-        document.getElementById('register-container').innerHTML = registrationFormHTML;
-        document.getElementById('BackLogin').onclick = function() {
-            location.reload(); // Or restore the login form HTML
-        };
-    });
+
+    // Initial render when the page loads
+    document.addEventListener('DOMContentLoaded', renderLoginForm);
 
 </script>
 
 
 <footer>
-     
     <p>Authors: Loïc Delattre, Mattis Roellinger, Guillaume Le Chartier</p>
 </footer>
