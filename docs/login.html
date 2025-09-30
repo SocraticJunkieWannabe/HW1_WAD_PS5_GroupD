@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+</head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style_footer.css" />
+    <link rel="stylesheet" href="styles/style_navbar.css" />
+    <link rel="stylesheet" href="styles/style_body.css" />
+    <link rel="stylesheet" href="styles/style_login.css" />
+    
+</head>
+<nav>
+    <div class="navbar-left">
+        <li><a href='index.html'>Home</a></li>
+        
+    </div>
+
+    <div class="navbar-right">
+         <a href = login.html> <img src="imgs/blank_profile.webp" alt="Blank Profile" width="50" height="50"> </a>
+    </div>
+</nav>
+
+<body>
+    <div id="container"> 
+    </div>
+</body>
+
+
+
+<script>
+
+    const registrationFormHTML = 
+    `
+    <h2>Register</h2>
+    <div oninput="validateRegistration()">
+        <div><input id="reg-email" type="email" placeholder="Email" required autofocus></div>
+        <div><input id="reg-password" type="password" placeholder="Password" required></div>
+        <div><input id="reg-confirm-password" type="password" placeholder="Confirm Password" required></div>
+    </div>
+    <div><button id="RegButton" onclick="location.href='index.html'" disabled>Register</button></div>
+        <button id="BackLogin">Back to Login</button>
+    `;
+    
+    const loginFormHTML = 
+        `
+        <h2>Login</h2>
+        <div oninput="validateLogin()">
+            <div><input id="login-email" type="email" placeholder="Please enter an email address" required autofocus></div>
+            <div><input id="login-password" type="password" placeholder="Please enter a password" required></div>
+        </div>
+        <div><button id="login-button" onclick="location.href='index.html'" disabled>Login</button></div>
+        <p>Don't have an account?</p> <button id="register-button">Register</button>
+           `;
+    const emptyFormHTML = ``;
+
+    function validateLogin() {
+        const email = document.getElementById('login-email').value;
+        const password = document.getElementById('login-password').value;
+        const loginButton = document.getElementById('login-button');
+
+        // Enable the button only if both fields are not empty
+        if (email.trim() !== '' && email.includes('@') && password.trim() !== '') {
+            loginButton.disabled = false;
+        } else {
+            loginButton.disabled = true;
+        }
+    }
+
+    function validateRegistration() {
+        const email = document.getElementById('reg-email').value;
+        const password = document.getElementById('reg-password').value;
+        const confirmPassword = document.getElementById('reg-confirm-password').value;
+        const registerButton = document.getElementById('RegButton');
+
+        // Enable the button only if all fields are not empty and passwords match
+        if (email.trim() !== '' && email.includes('@') && password.trim() !== '' && password === confirmPassword) {
+            registerButton.disabled = false;
+        } else {
+            registerButton.disabled = true;
+        }
+    }
+
+    function renderLoginForm() {
+        document.getElementById('container').innerHTML = loginFormHTML;
+    }
+
+    function renderRegForm() {
+        document.getElementById('container').innerHTML = registrationFormHTML;
+    }
+
+    // --- Event Delegation ---
+    // We listen for clicks on the main container, which never changes.
+    document.addEventListener('click', function(event) {
+        // If the element that was clicked has the id 'register-button', render the registration form.
+        if (event.target && event.target.id === 'register-button') {
+            renderRegForm();
+        }
+
+        // If the element that was clicked has the id 'BackLogin', render the login form.
+        if (event.target && event.target.id === 'BackLogin') {
+            renderLoginForm();
+        }
+    });
+
+    // Initial render when the page loads
+    document.addEventListener('DOMContentLoaded', renderLoginForm);
+
+</script>
+
+
+<footer>
+    <p>Authors: Loïc Delattre, Mattis Roellinger, Guillaume Le Chartier</p>
+</footer>
