@@ -3,31 +3,30 @@
  
 </head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/style_footer.css" />
     <link rel="stylesheet" href="styles/style_navbar.css" />
     <link rel="stylesheet" href="styles/style_body.css" />
     <link rel="stylesheet" href="styles/style_login.css" />
     
 </head>
-<nav>
-    <div class="navbar-left">
-        <li><a href='index.html'>Home</a></li>
-        
-    </div>
 
-    <div class="navbar-right">
-         <a href = login.html> <img src="imgs/blank_profile.webp" alt="Blank Profile" width="50" height="50"> </a>
-    </div>
-</nav>
 
 <body>
-    <div id="container"> 
-    </div>
-</body>
+    <nav>
+        <div class="navbar-left">
+            <li><a href='index.html'>Home</a></li>
+            
+        </div>
 
+        <div class="navbar-right">
+            <a href = login.html> <img src="imgs/blank_profile.webp" alt="Blank Profile" width="50" height="50"> </a>
+        </div>
+    </nav>
+    <main>
+        <div id="container"> 
+        </div>
+    <main>
 
-
-<script>
+    <script>
 
     const registrationFormHTML = 
     `
@@ -105,9 +104,14 @@
     // Initial render when the page loads
     document.addEventListener('DOMContentLoaded', renderLoginForm);
 
-</script>
+    </script>
+
+    
+    <footer>
+        <p>Authors: Loïc Delattre, Mattis Roellinger, Guillaume Le Chartier</p>
+    </footer>
+    
+</body>
 
 
-<footer>
-    <p>Authors: Loïc Delattre, Mattis Roellinger, Guillaume Le Chartier</p>
-</footer>
+
