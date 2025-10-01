@@ -22,11 +22,27 @@
         </div>
     </nav>
     <main>
-        <div id="container"> 
-        </div>
+        <div class="form-section">     
+            <div id="container"></div>  
+                    <button id="forgot-password-button">Forgot password ?</button>
+                
+        </div> 
+            
     </main>
 
     <script>
+
+    const forgotPasswordHTML = 
+    `
+    <h2>Forgot Password</h2>
+    
+    <div oninput="validateForgotPassword()">
+        <div><input id="forgot-email" type="email" placeholder="Please enter your email address" required autofocus></div>
+        <button id="forgot-button" disabled>Reset Password</button>
+        <button id="BackLogin">Back to Login</button>
+    
+    </div>
+    `;
 
     const registrationFormHTML = 
     `
@@ -51,6 +67,19 @@
         <p>Don't have an account?</p> <button id="register-button">Register</button>
            `;
     const emptyFormHTML = ``;
+    
+    function validateForgotPassword() {
+        const email = document.getElementById('forgot-email').value;
+        const forgotButton = document.getElementById('forgot-button');
+
+        // Enable the button only if the email field is not empty and contains an '@'
+        if (email.trim() !== '' && email.includes('@')) {
+            forgotButton.disabled = false;
+        } else {
+            forgotButton.disabled = true;
+        }
+    }
+    
 
     function validateLogin() {
         const email = document.getElementById('login-email').value;
@@ -96,8 +125,12 @@
         }
 
         // If the element that was clicked has the id 'BackLogin', render the login form.
-        if (event.target && event.target.id === 'BackLogin') {
+        if (event.target && event.target.id === 'BackLogin' || event.target.id === 'forgot-button') {
             renderLoginForm();
+        }
+
+        if (event.target && event.target.id === 'forgot-password-button') {
+            document.getElementById('container').innerHTML = forgotPasswordHTML;
         }
     });
 
@@ -107,8 +140,12 @@
     </script>
 
     
-    <footer>
+    <footer class="site-footer">
         <p>Authors: Loïc Delattre, Mattis Roellinger, Guillaume Le Chartier</p>
+        <div class="footer-links">
+            <span>Privacy Policy,</span>
+            <span>Terms of Service</span>
+        </div>
     </footer>
     
 </body>
