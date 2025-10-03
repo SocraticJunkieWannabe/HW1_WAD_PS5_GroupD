@@ -5,9 +5,9 @@ const data = [
         date: "20 November 2025", pfpPath: "imgs/blank_profile.webp"},
       {text: 'New year not new me :(', imagePath: "imgs/posts_media/ulikool.jpeg", 
         date: "20 December 2025", pfpPath: "imgs/blank_profile.webp"},
-      {text: 'Feur', imagePath: "imgs/posts_media/bridge.jpeg", 
+      {text: 'Slava Urkaini', imagePath: "imgs/posts_media/bridge.jpeg", 
         date: "20 June 2025", pfpPath: "imgs/blank_profile.webp"},
-      {text: 'Coubeh', imagePath: "", 
+      {text: 'Anyone got milk, I just ran out ...', imagePath: "", 
         date: "20 July 2025", pfpPath: "imgs/blank_profile.webp"}
     ];
 
