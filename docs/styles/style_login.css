@@ -24,7 +24,8 @@ main {
     
     justify-content: center;
     align-items: center;
-    width: 100%;
+
+    width: 90%;
     
     margin: 2% ;
     padding: 2%;
@@ -62,14 +63,4 @@ button:disabled {
     background-color: #e0e0e0;
     color: #a0a0a0;
     cursor: not-allowed;
-}
-
-footer{
-    
-    width: 100%;
-    margin: 0;
-    background: #333;
-    color: white;
-    padding: 20px;
-   
 }

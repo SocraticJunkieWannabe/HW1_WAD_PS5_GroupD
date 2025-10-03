@@ -16,13 +16,7 @@
     border-radius: 30px;
 }
 
-img + p {
-    font-size: 18px;
-}
 
-.post-content img {
-  max-width: 100%;   /* never bigger than its container */
-}
 
 img[src=""] {
   display: none;
@@ -41,8 +35,26 @@ img[src=""] {
     border-radius: 30px;
 }
 
+.post-content img + p {
+    font-size: 15px;
+}
+
+.post-content img ~ p {
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.post-content img {
+  max-width: 100%;   /* never bigger than its container */
+  border-radius: 10px;
+}
+
 .post-footer{
     display: flex;
     justify-content: space-between; /* pushes items to edges */
     width: 100%; /* send to both sides */
 }
+
+.post-footer > img {
+    border-radius: 30px;
+}
+
