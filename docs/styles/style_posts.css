@@ -16,8 +16,6 @@
     border-radius: 30px;
 }
 
-
-
 img[src=""] {
   display: none;
 }
@@ -48,13 +46,23 @@ img[src=""] {
   border-radius: 10px;
 }
 
+.post-footer input:hover{
+    box-shadow: 0px 5px 5px #585757;
+}
+
+.post-footer input:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 .post-footer{
     display: flex;
     justify-content: space-between; /* pushes items to edges */
     width: 100%; /* send to both sides */
 }
 
-.post-footer > img {
+.post-footer > input {
     border-radius: 30px;
 }
 
