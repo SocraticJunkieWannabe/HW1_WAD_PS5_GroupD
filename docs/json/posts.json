@@ -1,0 +1,82 @@
+[
+    {
+        "postId": 1,
+        "body": "Debate of the day: Võiga või võita ?",
+        "author_name": "John Doe",
+        "create_time" : "2025-10-26T18:25:43.511Z",
+        "profile_picture": "imgs/blank_profile.webp",
+        "img": ""
+    },
+    {
+        "postId": 2,
+        "body": "Bunch of bricks nothing much...",
+        "author_name": "John Doe",
+        "create_time" : "2025-10-26T18:25:43.511Z",
+        "profile_picture": "imgs/blank_profile.webp",
+        "img": "imgs/posts_media/cathedral.jpg"
+    },
+    {
+        "postId": 3,
+        "body": "New year not new me :(",
+        "author_name": "John Doe",
+        "create_time" : "2025-10-26T18:25:43.511Z",
+        "profile_picture": "imgs/blank_profile.webp",
+        "img": "imgs/posts_media/ulikool.jpeg"
+    },
+    {
+        "postId": 4,
+        "body": "Slava Urkaini",
+        "author_name": "John Doe",
+        "create_time" : "2025-10-26T18:25:43.511Z",
+        "profile_picture": "imgs/blank_profile.webp",
+        "img": "imgs/posts_media/bridge.jpeg"
+    },
+    {
+        "postId": 5,
+        "body": "Anyone got milk, I just ran out ...",
+        "author_name": "John Doe",
+        "create_time" : "2025-10-26T18:25:43.511Z",
+        "profile_picture": "imgs/blank_profile.webp",
+        "img": ""
+    },
+    {
+        "postId": 6,
+        "body": "",
+        "author_name": "John Doe",
+        "create_time" : "2025-10-26T18:25:43.511Z",
+        "profile_picture": "imgs/blank_profile.webp",
+        "img": "imgs/posts_media/city_center.jpeg"
+    },
+    {
+        "postId": 7,
+        "body": "",
+        "author_name": "John Doe",
+        "create_time" : "2025-10-26T18:25:43.511Z",
+        "profile_picture": "imgs/blank_profile.webp",
+        "img": "imgs/posts_media/bridge.jpeg"
+    },
+    {
+        "postId": 8,
+        "body": "Feur",
+        "author_name": "John Doe",
+        "create_time" : "2025-10-26T18:25:43.511Z",
+        "profile_picture": "imgs/blank_profile.webp",
+        "img": ""
+    },
+    {
+        "postId": 9,
+        "body": "Feur",
+        "author_name": "John Doe",
+        "create_time" : "2025-10-26T18:25:43.511Z",
+        "profile_picture": "imgs/blank_profile.webp",
+        "img": ""
+    },
+    {
+        "postId": 10,
+        "body": "Feur",
+        "author_name": "John Doe",
+        "create_time" : "2025-10-26T18:25:43.511Z",
+        "profile_picture": "imgs/blank_profile.webp",
+        "img": ""
+    }
+]
