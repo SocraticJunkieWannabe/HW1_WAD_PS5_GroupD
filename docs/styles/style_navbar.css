@@ -47,4 +47,62 @@ nav img {
   border-radius: 50%;
 }
 
+/* Dropdown container */
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropButton {
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+/* Dropdown menu - hidden by default */
+.dropdown-menu {
+    display: none; /* Hidden by default */
+    
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    z-index: 1000;
+    margin-top: 5px;
+}
+
+/* Show the dropdown when it has the 'show' class */
+.dropdown-menu.show {
+    display: block;
+}
+
+/* Dropdown menu items */
+.dropdown-menu a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.2s;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+/* First and last item rounded corners */
+.dropdown-menu a:first-child {
+    border-radius: 4px 4px 0 0;
+}
+
+.dropdown-menu a:last-child {
+    border-radius: 0 0 4px 4px;
+}
+
 

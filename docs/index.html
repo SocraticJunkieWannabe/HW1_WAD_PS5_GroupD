@@ -34,16 +34,29 @@
                 <img class="post-image" src="imgs/like.png" width="50" height="50"> 
             </div>
         </div>
+
     </template>
 
     <nav>
+
       <div class="navbar-left">
         <li><a href="index.html">Home</a></li>
         <li> | </li>
         <li><a href="addPost.html">Post</a></li>
       </div>
       <div class="navbar-right">
-         <a href = login.html> <img src="imgs/blank_profile.webp" alt="Blank Profile" width="50" height="50"> </a>
+        <div class="dropdown-container">
+            <button class="dropButton" id="dropButton"> <img src="imgs/blank_profile.webp" alt="Blank Profile" width="50" height="50"> 
+            </button>
+            <div class="dropdown-menu" id="dropdownMenu">
+                <a>Username</a>
+                <a>Email</a>
+                <a>Logout</a>
+                
+            </div>
+        </div>
+</div>
+      
       </div>
     </nav>
 
@@ -53,7 +66,8 @@
         <p>Authors: Loïc Delattre, Mattis Roellinger, Guillaume Le Chartier</p>
     </footer> 
 
-    <script src="src/posts_loader.js"> </script>
+    <script src="src/DropMenuLogic.js"></script>
+    <script src="src/posts_loader.js"></script>
 
 </body>
 </html>
