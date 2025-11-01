@@ -1,0 +1,109 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "authorName": "Alice Marino",
+      "authorAvatar": "img/avatar-alice.png",
+      "createdAt": "2025-10-28T14:32:00Z",
+      "text": "Soft launch of the new UI today 👀 Feedback welcome.",
+      "photo": "img/post-ui-preview.png",
+      "likes": 42,
+      "commentsCount": 5
+    },
+    {
+      "id": 2,
+      "authorName": "Lukas Braun",
+      "authorAvatar": "img/avatar-lukas.png",
+      "createdAt": "2025-10-28T16:10:00Z",
+      "text": "First espresso at the new office machine. Life changing ngl.",
+      "photo": "img/post-coffee.png",
+      "likes": 87,
+      "commentsCount": 11
+    },
+    {
+      "id": 3,
+      "authorName": "Maya Chen",
+      "authorAvatar": "img/avatar-maya.png",
+      "createdAt": "2025-10-29T09:02:00Z",
+      "text": "Reminder: Friday = no meetings after 14:00 ✨",
+      "photo": null,
+      "likes": 12,
+      "commentsCount": 0
+    },
+    {
+      "id": 4,
+      "authorName": "Victor Dupont",
+      "authorAvatar": "img/avatar-victor.png",
+      "createdAt": "2025-10-29T11:47:00Z",
+      "text": "Draft poster for the November event. Which color do you prefer?",
+      "photo": "img/post-event-draft.png",
+      "likes": 64,
+      "commentsCount": 9
+    },
+    {
+      "id": 5,
+      "authorName": "Nina Rossi",
+      "authorAvatar": "img/avatar-nina.png",
+      "createdAt": "2025-10-29T18:21:00Z",
+      "text": "Backend API mock is live. Frontend can now fetch posts without local JSON 🙌",
+      "photo": null,
+      "likes": 33,
+      "commentsCount": 2
+    },
+    {
+      "id": 6,
+      "authorName": "Lukas Braun",
+      "authorAvatar": "img/avatar-lukas.png",
+      "createdAt": "2025-10-30T07:55:00Z",
+      "text": "I fixed the dark mode bug. Stop bullying me now pls.",
+      "photo": "img/post-darkmode-fix.png",
+      "likes": 102,
+      "commentsCount": 18
+    },
+    {
+      "id": 7,
+      "authorName": "Alice Marino",
+      "authorAvatar": "img/avatar-alice.png",
+      "createdAt": "2025-10-30T12:14:00Z",
+      "text": "Heads up: 1h downtime on Saturday 03:00–04:00 for database maintenance.",
+      "photo": null,
+      "likes": 7,
+      "commentsCount": 1
+    },
+    {
+      "id": 8,
+      "authorName": "Maya Chen",
+      "authorAvatar": "img/avatar-maya.png",
+      "createdAt": "2025-10-30T15:40:00Z",
+      "text": "Today's desk vibes 🌿",
+      "photo": "img/post-desk-plants.png",
+      "likes": 55,
+      "commentsCount": 4
+    },
+    {
+      "id": 9,
+      "authorName": "Victor Dupont",
+      "authorAvatar": "img/avatar-victor.png",
+      "createdAt": "2025-10-31T10:05:00Z",
+      "text": "New brand guidelines are now in the shared drive. Please read them BEFORE posting visuals.",
+      "photo": "img/post-brand-guidelines.png",
+      "likes": 23,
+      "commentsCount": 3
+    },
+    {
+      "id": 10,
+      "authorName": "Nina Rossi",
+      "authorAvatar": "img/avatar-nina.png",
+      "createdAt": "2025-10-31T20:17:00Z",
+      "text": "🔥 Recruitment: looking for 1 frontend intern (JS + CSS). Ping me.",
+      "photo": null,
+      "likes": 76,
+      "commentsCount": 12
+    }
+  ],
+  "currentUser": {
+    "name": "Alice Marino",
+    "email": "alice.marino@example.com",
+    "avatar": "img/avatar-alice.png"
+  }
+}
