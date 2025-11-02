@@ -55,13 +55,11 @@ nav img {
 
 /* Dropdown button */
 .dropButton {
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
+    background-color: transparent;
+    padding: 0% 0%;
     border: none;
-    border-radius: 4px;
+    border-radius: 100%;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 
@@ -70,8 +68,10 @@ nav img {
     display: none; /* Hidden by default */
     
     position: absolute;
+    right: -56%;  /* Align to the right edge of the container */
+    top: 100%; /* Position below the button */
     background-color: #ffffff;
-    min-width: 200px;
+    min-width: 100px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     z-index: 1000;
